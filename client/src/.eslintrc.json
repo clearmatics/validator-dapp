@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "jsx-uses-vars": true
+    }
+  },
+  "extends": "eslint:recommended",
+  "plugins": ["react", "jest"],
+  "rules": {
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "indent": ["error", "tab"],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  },
+  "overrides": [
+    {
+      "files": "src/*/*.test.js",
+      "rules": {
+        "no-undef": 0
+      }
+    }
+  ]
+}
