@@ -1,16 +1,11 @@
-## Validator Dapp
-
-This is a React Dapp with a Validator and Observer view.
+## Validator Dapp on the live network Autonity network
 
 ### To run the application
 
 Clone the repo
-* cd into client/src
-* npm install
-* npm run testrpc to run ganache-cli
-* open another window in the same directory
-* npm run compile
-* npm run deploy
-* npm start
+
+- npm install
+- npm start
+- connect to Matamask and create a new custom RPC with http://34.243.204.94:30002 as the RPC url
 
 The frontend will load on http://localhost:3000/

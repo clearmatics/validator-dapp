@@ -1,0 +1,22 @@
+.App {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.main {
+	min-height: 1000px;
+	background: #fff;
+}
+
+h2 {
+	padding: 40px 0 10px;
+	width: 610px;
+	display: block;
+	margin: 0 auto;
+}
+
+#onLoad {
+	margin: 200px auto 0;
+	display: block;
+}

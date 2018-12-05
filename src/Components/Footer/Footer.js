@@ -1,5 +1,7 @@
 import React from 'react';
-import clearmaticsLogo from './assets/clearmatics-logo.png';
+import clearmaticsLogo from '../../assets/clearmatics-logo.png';
+import './Footer.css';
+
 class Footer extends React.Component {
 	render() {
 		return (

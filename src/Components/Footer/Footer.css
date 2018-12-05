@@ -1,0 +1,17 @@
+img#footer-logo {
+	width: 160px;
+	float: left;
+}
+
+.footer {
+	margin: 40px auto;
+	width: 100%;
+	display: block;
+	height: 50px;
+}
+
+#copy-right {
+	float: right;
+	color: #fff;
+	font-weight: 600;
+}
