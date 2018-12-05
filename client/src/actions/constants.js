@@ -1,1 +1,0 @@
-export const CONTRACT_DATA = 'CONTRACT_DATA';

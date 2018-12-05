@@ -1,10 +1,7 @@
 .App {
 	width: 80%;
-	background: #fff;
 	display: block;
 	margin: 0 auto;
-	min-height: 1200px;
-	padding: 20px 0;
 }
 
 .App-logo {

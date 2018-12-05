@@ -1,17 +1,15 @@
+const HDWalletProvider = require("truffle-hdwallet-provider");
+const metaMaskMem =
+  "sense frequent despair broom permit soup early purchase express struggle digital jelly";
+const infuraKey = "f6426404cc6843a3b63abe4c1c53448f";
 module.exports = {
   networks: {
     development: {
-      host: "localhost",
-      port: 8545,
-      network_id: "*"
-    },
-    coverage: {
-      host: "localhost",
-      port: 8555,
-      network_id: "*", // Match any network id
-      gas: 0xFFFFFFF,
-      gasprice: 0x1
-    },
+      host: "34.243.204.94",
+      port: 30002,
+      network_id: "2017",
+      gas: 2500000
+    }
   },
   mocha: {
     useColors: true,
@@ -20,7 +18,7 @@ module.exports = {
   solc: {
     optimizer: {
       enabled: true,
-        runs: 200
+      runs: 200
     }
   }
 };
