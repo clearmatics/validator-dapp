@@ -1,11 +1,14 @@
-# base image
-FROM node:8.7.0
+FROM node:8.15.0 as build
 
-# build environment
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
-COPY . /usr/src/app
+WORKDIR /app
+COPY . ${WORKDIR}
+RUN cp src/package.json .
 RUN npm install
+
+FROM node:8.15.0-alpine
+
+WORKDIR /app
+COPY --from=build /app /app
+
 EXPOSE 3000
 CMD npm run start

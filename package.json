@@ -1,12 +1,10 @@
 {
-  "name": "client",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "drizzle": "^1.2.4",
     "drizzle-react": "^1.2.0",
-    "ganache-cli": "^6.2.1",
-    "lodash": "^4.17.11",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.0.7",
@@ -14,32 +12,13 @@
     "react-scripts": "2.1.1",
     "react-table": "^6.8.6",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.3.0",
-    "solc": "^0.4.23",
-    "solhint": "^1.1.10",
-    "solidity-coverage": "^0.5.0 ",
-    "truffle": "^4.1.7",
-    "truffle-hdwallet-provider": "0.0.6",
-    "web3": "^1.0.0-beta.36"
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "compile": "truffle compile",
-    "build": "react-scripts build",
-    "deploy": "truffle deploy --network development",
-    "test": "truffle test --network development",
-    "eject": "react-scripts eject",
-    "testrpc": "ganache-cli --port 8545 --gasLimit 0xFFFFFFFFFFF --gasPrice 0 --networkId 1234 --deterministic grape crisp enroll avoid satoshi picnic term dice gown grocery situate depart"
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "devDependencies": {
-    "drizzle-react-components": "^1.2.0",
-    "eslint": "5.6.0",
-    "eslint-plugin-jest": "^21.22.0",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier-eslint": "^8.8.2"
   },
   "browserslist": [
     ">0.2%",
