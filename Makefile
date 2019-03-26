@@ -1,8 +1,23 @@
-.DEFAULT_GOAL := image
+ACCOUNT := clearmatics
+SERVICE := validator-dapp
+IMAGE := $(ACCOUNT)/$(SERVICE)
 
-image:
-	docker build -t 572232595707.dkr.ecr.eu-west-1.amazonaws.com/validator-dapp:latest .
-	docker push 572232595707.dkr.ecr.eu-west-1.amazonaws.com/validator-dapp:latest
+default: all
+
+all: login build push logout
 
 login:
-	aws ecr get-login --no-include-email --region eu-west-1
+	$(info Make: Login to Docker Hub)
+	@echo $(DOCKER_PASS) | docker login -u $(DOCKER_USER) --password-stdin
+
+build:
+	$(info Make: Building latest tagged image)
+	@docker build -t $(IMAGE):latest -f Dockerfile .
+
+push:
+	$(info Make: Pushing latest tagged image)
+	@docker push $(IMAGE):latest
+
+logout:
+	$(info Make: Clear Docker Hub credentials)
+	@docker logout
