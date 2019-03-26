@@ -14,6 +14,10 @@ build:
 	$(info Make: Building latest tagged image)
 	@docker build -t $(IMAGE):latest -f Dockerfile .
 
+run:
+	$(info Make: Building latest tagged image)
+	@docker run -d -p 3000:3000 --name $(SERVICE) $(IMAGE):latest
+
 push:
 	$(info Make: Pushing latest tagged image)
 	@docker push $(IMAGE):latest

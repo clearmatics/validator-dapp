@@ -1,11 +1,32 @@
-## Validator Dapp on the live network Autonity network
+## Validator Dapp on the live Autonity network
 
-### To run the application
+## Run
+To run the Validator frontend
 
-Clone the repo
+### With Docker
+Ensure Docker is installed
 
-- npm install
-- npm start
-- connect to Matamask and create a new custom RPC with http://34.243.204.94:30002 as the RPC url
+Pull:
+```
+docker pull clearmatics/validator-dapp
+```
+
+run:
+```
+make run
+```
+
+The frontend will load on: http://localhost:3000
+
+### Locally npm
+Ensure npm is installed
+
+- npm:
+```
+npm install
+npm start
+```
 
 The frontend will load on http://localhost:3000/
+
+Connect to Matamask and create a new `Custom RPC` with http://HOST:PORT of the network to connect to as the `New RPC URL`.
