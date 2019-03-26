@@ -2,7 +2,6 @@ FROM node:8.15.0 as build
 
 WORKDIR /app
 COPY . ${WORKDIR}
-RUN cp src/package.json .
 RUN npm install
 
 FROM node:8.15.0-alpine
