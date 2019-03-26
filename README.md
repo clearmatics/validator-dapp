@@ -6,7 +6,7 @@ To run the Validator frontend
 ### With Docker
 Ensure Docker is installed
 
-Pull:
+Pull from (DockerHub)(https://hub.docker.com/r/clearmatics/validator-dapp) :
 ```
 docker pull clearmatics/validator-dapp
 ```
