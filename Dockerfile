@@ -1,10 +1,10 @@
-FROM node:8.15.0 as build
+FROM node:8.15.1 as build
 
 WORKDIR /app
 COPY . ${WORKDIR}
 RUN npm install
 
-FROM node:8.15.0-alpine
+FROM node:8.15.1-alpine
 
 WORKDIR /app
 COPY --from=build /app /app
