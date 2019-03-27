@@ -6,6 +6,6 @@ Clone the repo
 
 - npm install
 - npm start
-- connect to Matamask and create a new custom RPC with http://34.243.204.94:30002 as the RPC url
+- connect to [Metamask](https://metamask.io/) and create a new custom RPC with http://34.243.204.94:30002 as the RPC url
 
 The frontend will load on http://localhost:3000/
