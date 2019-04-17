@@ -41,4 +41,4 @@ In the validator contract (Soma.json), the network address can be found. Note th
 
 ### Validator: Miscellaneous
 
-Interactions with smart contracts are facilitated with the library _Drizzle_ to make it easer to write DApp UIs. The loading button (and other alternatives) can be found at [loading.io](loading.io).
+Interactions with smart contracts are facilitated with the library _Drizzle_ to make it easer to write DApp UIs. The loading button (and other alternatives) can be found at [loading.io](https://loading.io).
