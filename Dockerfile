@@ -1,5 +1,5 @@
 # base image
-FROM node:8.7.0
+FROM node:8.16.0
 
 # build environment
 RUN mkdir /usr/src/app
