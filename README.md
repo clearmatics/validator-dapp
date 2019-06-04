@@ -8,7 +8,7 @@ Clone the repo
 
 - install [Metamask](https://metamask.io/) and create an account
 - press the icon of the current network name and choose Custom RPC
-- add http://34.243.204.94:30005 to the new RPC URL field and press Save
+- add the RPC endpoint for your Autonity network to the new RPC URL field and press Save
 - npm install
 - npm start
 
