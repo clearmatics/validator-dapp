@@ -20,7 +20,8 @@
     "solidity-coverage": "^0.5.0 ",
     "truffle": "^4.1.7",
     "truffle-hdwallet-provider": "0.0.6",
-    "web3": "^1.0.0-beta.36"
+    "web3": "^1.0.0-beta.36",
+    "snyk": "^1.258.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +30,9 @@
     "deploy": "truffle deploy --network development",
     "test": "truffle test --network development",
     "eject": "react-scripts eject",
-    "testrpc": "ganache-cli --port 8545 --gasLimit 0xFFFFFFFFFFF --gasPrice 0 --networkId 1234 --deterministic grape crisp enroll avoid satoshi picnic term dice gown grocery situate depart"
+    "testrpc": "ganache-cli --port 8545 --gasLimit 0xFFFFFFFFFFF --gasPrice 0 --networkId 1234 --deterministic grape crisp enroll avoid satoshi picnic term dice gown grocery situate depart",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,5 +49,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
